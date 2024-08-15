@@ -1,0 +1,12 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+
+# Arahkan permintaan dari index.php ke login.php
+RewriteCond %{REQUEST_URI} ^/index\.php$
+RewriteRule ^index\.php$ /login.php [L,R=301]
+
+# Pastikan semua permintaan lain di-handle oleh index.php jika tidak ada file yang cocok
+# Uncomment jika Anda ingin menggunakan index.php sebagai fallback
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ index.php [L]

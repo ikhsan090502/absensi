@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+</head>
+<body>
+    <?php
+    if (isset($_GET['file'])) {
+        $file = urldecode($_GET['file']);
+        echo "<h3>QR Code Anda:</h3>";
+        echo "<img src='$file' alt='QR Code'>";
+    } else {
+        echo "<p>QR Code tidak ditemukan.</p>";
+    }
+    ?>
+</body>
+</html>

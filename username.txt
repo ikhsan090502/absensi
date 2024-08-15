@@ -1,0 +1,20 @@
+operator 
+
+username : admin
+password : admin
+
+dosen
+
+username : 217/D/AUB/2007
+password : anton123
+
+mahasiswa
+
+username  : 2207200888
+password  : ikhsan123
+
+Tenaga Kependidikan
+
+username : 1
+password : tendik123
+
